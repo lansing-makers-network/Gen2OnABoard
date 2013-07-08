@@ -280,6 +280,7 @@ int parse_string(struct GcodeParser * gc, char instruction[ ], int size)
 			  break;
 		}
 	}
+	return ind;
 }
 
 
