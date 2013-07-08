@@ -31,7 +31,13 @@ http://objects.reprap.org/wiki/Mendel_User_Manual:_RepRapGCodes
 #include <ctype.h>
 #include <HardwareSerial.h>
 #include <avr/pgmspace.h>
+
+#if defined(ARDUINO) && ARDUINO >= 100
+#include "Arduino.h"
+#else
 #include "WProgram.h"
+#endif
+
 #include "vectors.h"
 #include "configuration.h"
 #include "intercom.h"
